@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2FA3B8;">
+        <div class="container w-75">
+            <a class="navbar-brand flex-grow-1" href="#">Kitab Mağazası</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <span id="elaveEdilenKitabSayi" class="badge bg-danger align-self-center rounded-circle"></span>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <ul style="min-width: 200px;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div id="drop-down-menu">
+
+                        </div>
+                        <hr class="dropdown-divider" />
+                        <li><a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Cəmi
+                                <span id="totalPrice"></span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="home_page.html">Ana səhifə</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Haqqımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kateqoriyalar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Ayın kitabı</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        İstifadəçi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container w-75">
+        <div class="row mx-auto d-flex justify-content-between my-5">
+            <div class="d-flex align-items-center justify-content-center p-0" style="width: 18rem;">
+                <img src="images/photo1717055463 (2).jpeg" class="card-img-top col-4" alt="...">
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-end m-auto">
+                        <h2>İncognito (beyinin gizli həyatı)</h2>
+                    </div>
+                    <div class="col-12 flex-row d-flex align-items-center justify-content-end m-auto mb-4">
+                        <h4 class="text-success ">12.00 AZN</h4>
+                        <strike class="text-danger ">15.00 AZN</strike>
+                    </div>
+                    <div class="col-12 text-end">
+                        <p>Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə edilən və indidən klassik asara çevrilən
+                            bu kitabı beynin sirli dünyasına təcrübələr, elmi biliklər və tarixi faktlar işığında
+                            səyahət edir. Kİtab tibbi mövzuda olsa da, müəllif yazarlıq məharətini və zəngin biliyini
+                            birləşdirərək elmi faktları sadə və müqayisəli dillə oxucularına təqdim edir. Müəllif əsər
+                            boyu sədaqət geni, qumarbazlara çevrilən parkinson xəstələri, gen-mühit əlaqəsi,"yaxşı" və
+                            "pis" gen, şüuraltı və qərarvermə mexanizmi , məsuliyyət anlayışı, beynin insan həyatında
+                            roıu kimi bir çox mövzulara toxunur. Alim bu mövzuların beyinlə əlaqəsini izah etməklə
+                            kifayətlənmir, beyinlə bağlı müxtəlif formullar və modellər irəli sürür. İnsan psixologiyası
+                            və davranışlarına neyron və gen prizmasından baxmağı öyrədir. Elmi-populyar dildə yazılmış
+                            bu kitab xüsusən müəllimlər, psixoloqlar, valideynlər, həkimlər üçün mühüm bilikləri ehtiva
+                            edir.
+                        </p>
+                        <i class="fa-solid fa-thumbs-up" style="font-size: 40px;"></i>
+                        <i class="fa-solid fa-heart px-3" style="font-size: 40px;"></i>
+                        <button type="button" class="myModal btn text-light mb-4" style="background-color: #2FA3B8;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">Səbətə
+                            əlavə et</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Bildiri</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div id="mehsul" class="modal-body">
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="warning" class="alert alert-warning py-1 text-center mb-4" role="alert">
+            Bu kitabdan cəmi <span id="qalanKitabSayi">2</span> ədəd qalıb
+        </div>
+
+        <table class="table table-striped mb-4 border">
+            <h4 class="fw-normal text-center mb-3">XÜSUSİYYƏTLƏR</h4>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Xüsusiyyət</th>
+                    <th scope="col">Açıqlama</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Dil:</td>
+                    <td>Azərbaycaca</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Janr:</td>
+                    <td>Psixologiya</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Müəllif:</td>
+                    <td>David Eagleman</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Nəşriyyat:</td>
+                    <td>Qanun Nəşriyyatı</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <h4 class="fw-normal text-center">ŞƏRH YAZ</h4>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Tam adınız:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ad Soyad">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Hansı dildə oxumusunuz?</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">Azərbaycan</option>
+                    <option value="2">Rus</option>
+                    <option value="3">İngilis</option>
+                </select>
+            </div>
+            <label for="customRange1" class="form-label">Qiymətləndirmə:</label>
+            <input type="range" class="col-12">
+            <label for="formGroupExampleInput" class="form-label">Şərhiniz:</label>
+            <div class="form-floating">
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="form-check form-switch my-3">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Bu kitabı oxumusunuzmu?</label>
+            </div>
+            <button type="button" class="btn btn-primary mb-4">Submit</button>
+        </form>
+    </div>
+
+    <div class="border-bottom border-white" style="background-color: #2FA3B8;">
+        <h4 class="text-center text-light py-4 m-0">Bütün kitablar</h2>
+            <div class="container w-75 m-auto text-center slick-slider">
+                <img src="https://m.media-amazon.com/images/I/71gqyd1tWdL._AC_UF1000,1000_QL80_.jpg" class="mx-3 mb-5"
+                    style="width: 150px; height: 220px;">
+                <img src="https://www.mqup.ca/filebin/images/products/zoom/9780228018643.jpg" class="mx-3 mb-5"
+                    style="width: 150px; height: 220px;">
+                <img src="https://i.dr.com.tr/cache/600x600-0/originals/0000000064038-1.jpg" class="mx-3 mb-5"
+                    style="width: 150px; height: 220px;">
+                <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781451687606/love-story-9781451687606_hr.jpg"
+                    class="mx-3 mb-5" style="width: 150px; height: 220px;">
+                <img src="https://books.disney.com/content/uploads/2019/10/SoThisIsLove_FINAL_R41-684x1024.jpg"
+                    class="mx-3 mb-5" style="width: 150px; height: 220px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Cover_of_the_first_edition_of_Crime_and_Punishment.jpg"
+                    class="mx-3 mb-5" style="width: 150px; height: 220px;">
+            </div>
+    </div>
+
+    <div>
+        <p class="text-center text-light py-3 m-0" style="background-color: #2FA3B8;">Copyright ⓒ E-mağaza layihəsi</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/product_page.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
